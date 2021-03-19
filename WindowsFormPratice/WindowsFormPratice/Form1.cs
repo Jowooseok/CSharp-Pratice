@@ -17,11 +17,19 @@ namespace WindowsFormPratice
             InitializeComponent();
         }
 
-        private void btnClickThis_Click(object sender,EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            lblHelloWorld.Text = "Hello World";
+
         }
-    
-        
+
+  
+         
+        private void textInput_KeyDown(object sender, KeyEventArgs e)
+        {
+           if(e.KeyCode == Keys.Enter)
+            {
+                testLabel.Text = textInput.Text;
+            }
+        }
     }
 }
