@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.textInput = new System.Windows.Forms.TextBox();
-            this.testLabel = new System.Windows.Forms.Label();
+            this.checkList = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // textInput
@@ -38,24 +38,22 @@
             this.textInput.Name = "textInput";
             this.textInput.Size = new System.Drawing.Size(341, 21);
             this.textInput.TabIndex = 0;
-            this.textInput.KeyDown += textInput_KeyDown;
-
+            this.textInput.KeyDown += this.textInput_KeyDown;
             // 
-            // testLabel
+            // checkList
             // 
-            this.testLabel.AutoSize = true;
-            this.testLabel.Location = new System.Drawing.Point(21, 78);
-            this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(38, 12);
-            this.testLabel.TabIndex = 1;
-            this.testLabel.Text = "label1";
+            this.checkList.FormattingEnabled = true;
+            this.checkList.Location = new System.Drawing.Point(12, 12);
+            this.checkList.Name = "checkList";
+            this.checkList.Size = new System.Drawing.Size(341, 308);
+            this.checkList.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 357);
-            this.Controls.Add(this.testLabel);
+            this.Controls.Add(this.checkList);
             this.Controls.Add(this.textInput);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -68,7 +66,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textInput;
-        private System.Windows.Forms.Label testLabel;
+        private System.Windows.Forms.CheckedListBox checkList;
     }
 }
 

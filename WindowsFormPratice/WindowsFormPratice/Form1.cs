@@ -28,8 +28,13 @@ namespace WindowsFormPratice
         {
            if(e.KeyCode == Keys.Enter)
             {
-                testLabel.Text = textInput.Text;
+                checkList.Items.Add(textInput.Text);
             }
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
